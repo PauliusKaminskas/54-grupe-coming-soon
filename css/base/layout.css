@@ -38,7 +38,6 @@
     .container > .row,
     .container > .row-short {
         width: 400px;
-
         flex-direction: column;
     }
     .container .left-column,
