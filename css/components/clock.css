@@ -1,12 +1,14 @@
 .clock {
     display: flex;
-    gap: 1rem;
+    gap: 1rem 0;
+    color: #fff;
+    flex-wrap: wrap;
 }
 .clock > .time {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    width: 100%;
+    width: 25%;
     text-align: center;
 }
 .clock > .time > .value {
@@ -17,4 +19,9 @@
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+@media (max-width: 700px) {
+    .clock > .time {
+        width: 100%;
+    }
 }
