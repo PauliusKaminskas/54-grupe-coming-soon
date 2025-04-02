@@ -18,7 +18,7 @@
     width: 600px;
     gap: 20px;
 }
-.container .left-column,
+.container .column,
 .container .right-column {
     display: flex;
     flex-direction: column;

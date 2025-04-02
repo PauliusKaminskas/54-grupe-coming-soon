@@ -4,3 +4,50 @@
 @import '../components/progress-bar.css';
 @import '../components/mouse.css';
 @import '../vendors/font-awesome.min.css';
+@import '../components/socials.css';
+
+/* Custom */
+
+.footer {
+    padding-top: 0;
+    color: #fffc;
+}
+.footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer p a:hover {
+    text-decoration: underline;
+}
+.trio {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.trio > p {
+    position: relative;
+}
+.trio > p::after {
+    content: '';
+    display: block;
+    width: 0.1rem;
+    height: 1em;
+    background-color: #fff;
+    margin-left: 0.7rem;
+    position: absolute;
+    top: 50%;
+    right: -0.55rem;
+    transform: translateY(-50%);
+}
+.trio > p:last-child::after {
+    display: none;
+}
+@media (max-width: 700px) {
+    .trio {
+        flex-direction: column;
+    }
+    .trio > p::after {
+        display: none;
+    }
+}
