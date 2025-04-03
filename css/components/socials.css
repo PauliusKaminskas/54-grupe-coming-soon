@@ -23,7 +23,7 @@
 .socials > a:hover {
     width: 5rem;
     height: 5rem;
-    background-color: red;
+    background-color: #ec1d61;
     text-decoration: none;
 }
 /* .socials > a:nth-child(2):hover {
