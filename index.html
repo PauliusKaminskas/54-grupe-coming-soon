@@ -112,57 +112,53 @@
                             impedit laboriosam maxime libero.
                         </p>
                         <form action="api" method="post">
-                            <div>
-                                <input
-                                    id="user id"
-                                    type="text"
-                                    value="buyer"
-                                    hidden
-                                />
+                            <div class="name-email">
+                                <div class="name-box">
+                                    <label for="name">Name</label>
+                                    <input
+                                        style="
+                                            border: transparent;
+                                            border-bottom: 1px solid grey;
+                                        "
+                                        id="name"
+                                        type="text"
+                                        value=""
+                                        name="name"
+                                        autocomplete="given-name"
+                                    />
+                                </div>
+                                <div class="email-box">
+                                    <label for="email">Email</label>
+                                    <input
+                                        style="
+                                            border: transparent;
+                                            border-bottom: 1px solid grey;
+                                        "
+                                        id="email"
+                                        type="email"
+                                        value=""
+                                        name="email"
+                                        autocomplete="email"
+                                    />
+                                </div>
                             </div>
-                            <div>
-                                <label for="id">ID</label>
+                            <div class="message-box">
+                                <label for="message">Message</label>
                                 <input
-                                    id="id"
+                                    style="
+                                        border: transparent;
+                                        border-bottom: 1px solid grey;
+                                    "
+                                    id="message"
                                     type="text"
-                                    value="123465"
-                                    readonly
-                                />
-                            </div>
-                            <div>
-                                <label for="username">Username</label>
-                                <input
-                                    id="username"
-                                    type="text"
-                                    value="Babilonas"
-                                    name="username"
-                                    autocomplete="username"
-                                />
-                            </div>
-                            <div>
-                                <label for="email">email</label>
-                                <input
-                                    id="email"
-                                    type="email"
-                                    name="email"
                                     value=""
-                                    autocomplete="email"
-                                    autofocus
+                                    name="message"
                                 />
                             </div>
-                            <div>
-                                <label for="password">Password</label>
-                                <input
-                                    id="password"
-                                    type="password"
-                                    name="password"
-                                    value=""
-                                    autocomplete="current-password"
-                                />
-                            </div>
-                            <div>
-                                <button type="submit">Register</button>
-                                <button type="reset">Reset</button>
+                            <div class="message-button">
+                                <button class="send-message" type="submit">
+                                    Send Message
+                                </button>
                             </div>
                         </form>
                     </div>
